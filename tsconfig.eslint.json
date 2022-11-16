@@ -17,7 +17,13 @@
     "incremental": true,
     "useUnknownInCatchVariables": false,
     "noImplicitAny": false,
+    "baseUrl": "./src",
+    "paths": {
+      "@public/*": ["../public/*"],
+      "@components/*": ["./src/components/*"],
+      "@styles/*": ["./src/styles/*"],
+    }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": ["src/**/*", "next-env.d.ts", "**/*.ts", "**/*.tsx", "**/*.config.js"],
   "exclude": ["node_modules"]
 }

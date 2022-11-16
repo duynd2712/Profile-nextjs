@@ -1,0 +1,8 @@
+# .estlintignore file
+dist
+.next
+build
+node_modules/
+.eslintrc.js
+.lintstagedrc.js
+.prettierrc.js

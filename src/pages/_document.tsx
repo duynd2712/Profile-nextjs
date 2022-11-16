@@ -2,9 +2,9 @@ import { Head, Html, Main, NextScript } from 'next/document';
 
 export default function Document() {
   return (
-    <Html>
+    <Html lang="en">
       <Head>
-        <title>Profile Home</title>
+        <link rel="shortcut icon" href="/static/favicon.ico" />
       </Head>
       <body>
         <Main />

@@ -1,12 +1,13 @@
 module.exports = {
   parser: '@typescript-eslint/parser',
   parserOptions: {
-    project: './tsconfig.json',
+    project: './tsconfig.eslint.json',
     ecmaVersion: 2018,
     sourceType: 'module',
+    tsconfigRootDir: __dirname,
     ecmaFeatures: {
-      jsx: true,
-    },
+      jsx: true
+    }
   },
   plugins: ['@typescript-eslint'],
   extends: [
@@ -15,7 +16,7 @@ module.exports = {
     'plugin:@typescript-eslint/recommended',
     'eslint:recommended',
     'next',
-    'prettier',
+    'prettier'
   ],
   rules: {
     'react-hooks/rules-of-hooks': 'error',
@@ -32,26 +33,24 @@ module.exports = {
       'error',
       {
         vars: 'all',
-        args: 'none',
-        argsIgnorePattern: '^_',
-      },
+        args: 'none'
+      }
     ],
     'spaced-comment': 'off',
     'no-console': 'warn',
-    '@next/next/no-img-element': 'off',
-    'prettier/prettier': ['error'],
+    '@next/next/no-img-element': 'off'
   },
   overrides: [
     {
       files: ['**/*.tsx', '**/*.ts'],
       rules: {
-        'react/prop-types': 'off',
-      },
-    },
+        'react/prop-types': 'off'
+      }
+    }
   ],
   settings: {
     react: {
-      version: 'detect',
-    },
-  },
+      version: 'detect'
+    }
+  }
 };
