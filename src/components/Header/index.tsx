@@ -1,14 +1,14 @@
 import AdbIcon from '@mui/icons-material/Adb';
 import MenuIcon from '@mui/icons-material/Menu';
+import { Avatar, Tooltip } from '@mui/material';
 import AppBar from '@mui/material/AppBar';
-import Avatar from '@mui/material/Avatar';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
+import { grey } from '@mui/material/colors';
 import IconButton from '@mui/material/IconButton';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import Toolbar from '@mui/material/Toolbar';
-import Tooltip from '@mui/material/Tooltip';
 import Typography from '@mui/material/Typography';
 import * as React from 'react';
 
@@ -37,7 +37,7 @@ export default function Header() {
   return (
     <AppBar position="static" color="transparent" sx={{ boxShadow: 'none' }}>
       <Toolbar disableGutters>
-        <AdbIcon sx={{ color: '#ffffff', display: { xs: 'none', md: 'flex' }, mr: 1 }} />
+        <AdbIcon sx={{ color: grey[900], display: { xs: 'none', md: 'flex' }, mr: 1 }} />
         <Typography
           variant="h6"
           noWrap
@@ -49,7 +49,7 @@ export default function Header() {
             fontFamily: 'monospace',
             fontWeight: 700,
             letterSpacing: '.3rem',
-            color: '#ffffff',
+            color: grey[900],
             textDecoration: 'none'
           }}
         >
@@ -116,7 +116,7 @@ export default function Header() {
             <Button
               key={page}
               onClick={handleCloseNavMenu}
-              sx={{ my: 2, color: 'white', display: 'block' }}
+              sx={{ my: 2, color: grey[900], display: 'block' }}
             >
               {page}
             </Button>
